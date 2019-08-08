@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  cassandra:
+    build:
+      context: ../
+      dockerfile: docker/cassandra/Dockerfile
+    ports:
+      - "9042:9042"
+    container_name: cassandra
+
+networks:
+  default:
+    driver: bridge
