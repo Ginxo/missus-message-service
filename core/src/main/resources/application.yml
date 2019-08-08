@@ -1,0 +1,11 @@
+spring:
+  data:
+    cassandra:
+      contactpoints: ${CASSANDRA_HOST:127.0.0.1}
+      keyspace-name: ${CASSANDRA_KEYSPACE_NAME:message-websocket}
+      port: ${CASSANDRA_PORT:9042}
+      keyspace: ${CASSANDRA_KEYSPACE:messageServiceKeyspace}
+      basepackages: io.missus.messageservice.data.entity
+
+websocket:
+  uri: ${WEBSOCKET_URI:event-emitter}

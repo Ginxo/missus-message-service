@@ -1,0 +1,5 @@
+service:
+  cassandra:
+    hosts: ${CASSANDRA_HOSTS:localhost}
+    keyspace: ${CASSANDRA_KEYSPACE:beautifulkeyspacename}
+    port: ${CASSANDRA_PORT:9142}

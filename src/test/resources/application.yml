@@ -1,5 +1,0 @@
-service:
-  cassandra:
-    hosts: localhost
-    keyspace: beautifulkeyspacename
-    port: 9142
